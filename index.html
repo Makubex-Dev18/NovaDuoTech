@@ -1,84 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>NovaDuo Tech</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">NovaDuo Tech</h1>
-                    <h2 class="fst-italic lh-1 mb-4">Nuestro sitio web estará disponible próximamente</h2>
-                    <p class="mb-5">Estamos trabajando arduamente para finalizar el desarrollo de este sitio. ¡Regístrese a continuación para recibir actualizaciones y recibir una notificación cuando lo lancemos!</p>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                         <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Ingrese correo electronico.." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Suscribirme</button></div>
-                        </div>
-                       <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div> 
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaDuoTech Solutions</title>
+    <meta name="keywords" content="">
+
+    <!--fuentes-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+    <!--iconos-->
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--<link href="vendor/aos/aos.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="index-page">
+
+    <!--cabecera-->
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="img/logo.png" alt=""> -->
+                <h1 class="sitename">NovaDuo</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#services">Servicios </a></li>
+                    <li><a href="#portfolio">Reseña</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li class="dropdown"><a href="#"><span>Opciones</span><i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span><i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <!--boton para la cabecera-->
+            <!--<a class="cta-btn" href="index.html#about">Get Started</a>-->
+        </div>
+    </header>
+
+
+    <main class="main">
+        <!--portada - Hero Section-->
+        <section id="hero" class="hero section dark-background">
+            <img src="img/2.jpg" alt="" data-aos="fade-in">
+            <div class="container d-flex flex-column align-items-center">
+                <h2 data-aos="fade-up" data-aos-delay="100">✨ Bienvenido al futuro con NovaDuo Tech 🚀 </h2>
+                <p>
+                <p>
+                <h5 data-aos="fade-up" data-aos-delay="200">En un mundo donde la tecnología avanza a la velocidad de la
+                    luz, las empresas tienen dos opciones: evolucionar o quedarse atrás.</h5>
+                <h5 data-aos="fade-up" data-aos-delay="200">En NovaDuo Tech, no solo te ayudamos a adaptarte, sino que
+                    te convertimos en un líder digital.</h5>
+                <br>
+                <br>
+                <h6>🚀 ¿Listo para llevar tu empresa al siguiente nivel? El futuro es ahora, y nosotros te llevamos
+                    allí.</h6>
+                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <!--  <a href="#about" class="btn-get-started">Get Started</a> -->
+                    <a href="https://www.youtube.com/watch?v=Ndf-eMyEVG8" target="_blank"
+                        class="glightbox btn-watch-video d-flex align-items-center btn-get-started ">
+                        <i class="bi bi-play-circle"></i><span>Mirar Video</span></a>
                 </div>
             </div>
-        </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+        </section>
+
+        <!--Nososotros - about Section-->
+        <section id="about" class="about section">
+            <!--Nososotros - about Section-->
+            <!--   <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <h3>Quienes Somos</h3>
+                <img src="img/1.jpg"  width="40% img-fluid rounded-4 mb-4" alt="nosotros">
+               <p><p>En NovaDuo Tech, impulsamos la transformación digital y la optimización empresarial a través de soluciones innovadoras en análisis de datos, desarrollo de software y estrategias digitales. Creemos que la evolución y sostenibilidad de las empresas dependen de su capacidad para adaptarse a un entorno digital en constante cambio.
+                    Combinamos tecnología, creatividad y estrategia para convertir datos en decisiones inteligentes, optimizar procesos y fortalecer la presencia digital de nuestros clientes. Nuestro compromiso es ayudar a las empresas a crecer, innovar y destacar en un mundo cada vez más competitivo.</p>
+
+                <h2>Mision</h2>
+                <p>Nuestra misión es convertir datos en estrategias accionables y herramientas tecnológicas eficientes que potencien la toma de decisiones y el crecimiento de nuestros clientes, brindando innovación, calidad y resultados medibles.</p>
+                <h2>Vision</h2>
+                <p>Ser la empresa líder en soluciones tecnológicas y estrategias digitales a nivel nacional, reconocida por su capacidad de integrar inteligencia de negocios, desarrollo de software y marketing digital para impulsar el crecimiento e innovación empresarial.</p>
+            </div> -->
+            <div class="container">
+
+                <div class="row gy-4">
+                    <div class="col-lg-6 content ps-0 ps-lg-5" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Quienes Somos</h3>
+                        <img src="img/1.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                        <p>Somos especialistas en análisis de datos, desarrollo de software y estrategias digitales,
+                            creando soluciones innovadoras que impulsan el crecimiento y la eficiencia de tu negocio.
+                            Creemos que el éxito no es solo cuestión de competir, sino de transformar y anticiparse al
+                            cambio.🤖📊🧑‍💻</p>
+                        <br>
+                        <h3 class="fst-italic">Valores</h3>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> <span>Innovación 🚀</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i> <span>Compromiso 🤝</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i> <span>Transparencia 🔍</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i> <span>Adaptabilidad 🔄</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i> <span>Excelencia 💎</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+                        <div class="content ps-0 ps-lg-5">
+                            <h3 class="fst-italic"> Mision </h3>
+                            <p>Nuestra misión es convertir datos en estrategias accionables y herramientas tecnológicas
+                                eficientes que potencien la toma de decisiones y el crecimiento de nuestros clientes,
+                                brindando innovación, calidad y resultados medibles.</p>
+                            <h3 class="fst-italic"> Vision </h3>
+                            <p>Ser la empresa líder en soluciones tecnológicas y estrategias digitales a nivel nacional,
+                                reconocida por su capacidad de integrar inteligencia de negocios, desarrollo de software
+                                y marketing digital para impulsar el crecimiento e innovación empresarial.</p>
+
+                            <div class="position-relative mt-4">
+                                <img src="img/about-2.jpg" class="img-fluid rounded-4" alt="">
+                                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                    class="glightbox pulsating-play-btn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        </section>
+
+        <!--estadisticas - stats Section-->
+
+        <section id="stats" class="stats section light-background">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="232"
+                                    data-purecounter-duration="1" class="purecounter">2</span>
+                                <p>Clientes Felices</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="521"
+                                    data-purecounter-duration="1" class="purecounter">2</span>
+                                <p>Proyectos</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-headset color-green flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="1463"
+                                    data-purecounter-duration="1" class="purecounter">1463</span>
+                                <p>Horas de soporte</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-people color-pink flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                                    class="purecounter">3</span>
+                                <p>Trabajadores</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                </div>
+             </div>
+         </section>
+
+         <!--clientes marcas-->
+         <section id="clients" class="clients section light-background">
+            <h4 class="text-center">Empresas que confían en nosotros</h4>
+            <div class="container" data-aos="fade-up">
+      
+              <div class="row gy-4">
+      
+                <div class="col-xl-2 col-md-3 col-6 client-logo">
+                  <img src="img/clients/client-1.png" class="img-fluid" alt="">
+                </div><!-- End Client Item -->
+      
+                <div class="col-xl-2 col-md-3 col-6 client-logo">
+                  <img src="img/clients/client-2.png" class="img-fluid" alt="">
+                </div><!-- End Client Item -->
+      
+                <div class="col-xl-2 col-md-3 col-6 client-logo">
+                  <img src="img/clients/client-3.png" class="img-fluid" alt="">
+                </div><!-- End Client Item -->
+      
+                <div class="col-xl-2 col-md-3 col-6 client-logo">
+                  <img src="img/clients/client-4.png" class="img-fluid" alt="">
+                </div><!-- End Client Item -->
+      
+                <div class="col-xl-2 col-md-3 col-6 client-logo">
+                  <img src="img/clients/client-5.png" class="img-fluid" alt="">
+                </div><!-- End Client Item -->
+      
+                <div class="col-xl-2 col-md-3 col-6 client-logo">
+                  <img src="img/clients/client-6.png" class="img-fluid" alt="">
+                </div><!-- End Client Item -->
+                
+              </div>
+      
+            </div>
+      
+          </section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
 </html>
