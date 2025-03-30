@@ -561,13 +561,15 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
+  background-color: rgba(21, 34, 43, 0.85);
   font-size: 14px;
   position: relative;
 }
 
 .footer .footer-top {
-  padding-top: 50px;
+  padding-top: 10px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding-bottom: 2px;
 }
 
 .footer .footer-about .logo {
@@ -1630,6 +1632,8 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 24px 0 30px 0;
+  border: 2px dotted orange;
+  border-radius: 20px;
 }
 
 .contact .info-item i {
@@ -1665,7 +1669,12 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   height: 100%;
+  /*agrege el witdht y margin left y los bordes*/
+
   padding: 30px;
+
+  border-radius: 20px;
+  border: 2px dotted orange;
 }
 
 @media (max-width: 575px) {
