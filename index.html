@@ -41,9 +41,9 @@
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="img/logo.png" alt=""> -->
-          <h1 class="sitename">NovaDuo</h1>
+          <!--logo -->
+          <img src="/logo2.png" alt="logo" title="logo" />
+          <h1 class="sitename"></h1>
         </a>
         <nav id="navmenu" class="navmenu">
           <ul>
@@ -62,19 +62,6 @@
             <li><a href="#services">Servicios </a></li>
             <li><a href="#portfolio">Reseña</a></li>
             <li><a href="#contact">Contacto</a></li>
-
-                <!-- Botón de WhatsApp -->
-    <a
-    href="https://wa.me/51976484903?text=Hola%2C%20acabo%20de%20revisar%20su%20p%C3%A1gina%20web%20y%20estoy%20interesado%20en%20el%20servicio%20de..."
-    class="whatsapp-button"
-    target="_blank"
-    title="Chatea con nosotros en WhatsApp"
-  >
-    <img
-      src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
-      alt="WhatsApp"
-    />
-  </a>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -86,54 +73,55 @@
     <main class="main">
       <!--portada - Hero Section-->
       <section id="hero" class="hero section dark-background">
-        <img src="img/2.jpg" alt="" data-aos="fade-in" />
+        <!-- <img src="img/2.jpg" alt="" data-aos="fade-in" /> -->
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="position-absolute top-0 start-0 w-100 h-80"
+          style="object-fit: cover; z-index: 0"
+        >
+          <source src="mp4/fondo1.mp4" />
+        </video>
         <div class="container d-flex flex-column align-items-center">
           <h2 data-aos="fade-up" data-aos-delay="100">
-            Bienvenido al futuro con NovaDuo Tech
+            Bienvenido al futuro con
+            <strong style="color: #33cc66"> NovaDuo Tech</strong>
           </h2>
-          <p></p>
           <p></p>
           <h5 data-aos="fade-up" data-aos-delay="200">
             En un mundo donde la tecnología avanza a la velocidad de la luz, las
-            empresas tienen dos opciones: evolucionar o quedarse atrás.
+            empresas tienen dos opciones:
+            <strong style="color: lightseagreen">evolucionar</strong> o
+            <strong style="color: lightsalmon">quedarse atrás.</strong>
           </h5>
-          <h5 data-aos="fade-up" data-aos-delay="200">
+          <h5 data-aos="fade-up" data-aos-delay="20 0">
             En NovaDuo Tech, no solo te ayudamos a adaptarte, sino que te
             convertimos en un líder digital.
           </h5>
           <br />
           <br />
           <h6>
-            🚀 ¿Listo para llevar tu empresa al siguiente nivel? El futuro es
+            ¿Listo para llevar tu empresa al siguiente nivel? El futuro es
             ahora, y nosotros te llevamos allí.
           </h6>
           <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
             <!--  <a href="#about" class="btn-get-started">Get Started</a> -->
+            <!--
             <a
               href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
               target="_blank"
               class="glightbox btn-watch-video d-flex align-items-center btn-get-started"
             >
-              <i class="bi bi-play-circle"></i><span>Mirar Video</span></a
-            >
+              <i class="bi bi-play-circle"></i><span>Mirar Video</span></a >
+              -->
           </div>
         </div>
       </section>
 
       <!--Nososotros - about Section-->
       <section id="about" class="about section">
-        <!--Nososotros - about Section-->
-        <!--   <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <h3>Quienes Somos</h3>
-                <img src="img/1.jpg"  width="40% img-fluid rounded-4 mb-4" alt="nosotros">
-               <p><p>En NovaDuo Tech, impulsamos la transformación digital y la optimización empresarial a través de soluciones innovadoras en análisis de datos, desarrollo de software y estrategias digitales. Creemos que la evolución y sostenibilidad de las empresas dependen de su capacidad para adaptarse a un entorno digital en constante cambio.
-                    Combinamos tecnología, creatividad y estrategia para convertir datos en decisiones inteligentes, optimizar procesos y fortalecer la presencia digital de nuestros clientes. Nuestro compromiso es ayudar a las empresas a crecer, innovar y destacar en un mundo cada vez más competitivo.</p>
-
-                <h2>Mision</h2>
-                <p>Nuestra misión es convertir datos en estrategias accionables y herramientas tecnológicas eficientes que potencien la toma de decisiones y el crecimiento de nuestros clientes, brindando innovación, calidad y resultados medibles.</p>
-                <h2>Vision</h2>
-                <p>Ser la empresa líder en soluciones tecnológicas y estrategias digitales a nivel nacional, reconocida por su capacidad de integrar inteligencia de negocios, desarrollo de software y marketing digital para impulsar el crecimiento e innovación empresarial.</p>
-            </div> -->
         <div class="container">
           <div class="row gy-4">
             <div
@@ -141,7 +129,10 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h2>Quiénes Somos</h2>
+              <div class="container section-title" data-aos="fade-up">
+                <h2>NDT Nosotros</h2>
+                <p>Quiénes Somos</p>
+              </div>
               <img src="img/1.jpg" class="img-fluid rounded-4 mb-4" alt="" />
               <p>
                 Somos especialistas en análisis de datos, desarrollo de software
@@ -754,7 +745,9 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">NovaDuo</span>
+              <span class="sitename"
+                ><img src="/logo2.png" alt="" title="logo "
+              /></span>
             </a>
             <div class="footer-contact pt-3">
               <p>Av tomas guzman 999</p>
@@ -793,11 +786,11 @@
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="#">Terms of service</a>
+                <a href="#">Terminos de servicio</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="#">Privacy policy</a>
+                <a href="#">Politica de privacidad</a>
               </li>
             </ul>
           </div>
@@ -831,7 +824,7 @@
 
       <div class="container copyright text-center mt-4">
         <p>
-          © <span>Copyright</span> <b class="px-1 sitename">NovaDuo</b>
+          © <span>Copyright</span> <b class="px-1 sitename">NovaDuo Tech</b>
           <span>Reservados todos los derechos</span>
         </p>
         <div class="credits">
@@ -840,12 +833,12 @@
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by
-          <a href="https://makubex-dev18.github.io/NovaDuoTech/">NovaDuoTech</a>
+          <a href="https://makubex-dev18.github.io/NovaDuoTech/"
+            >NovaDuo Tech</a
+          >
         </div>
       </div>
     </footer>
-
-
 
     <!-- Scroll Top -->
     <a
@@ -854,6 +847,19 @@
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+
+    <!-- Botón de WhatsApp -->
+    <a
+      href="https://wa.me/51976484903?text=Hola%2C%20acabo%20de%20revisar%20su%20p%C3%A1gina%20web%20y%20estoy%20interesado%20en%20el%20servicio%20de..."
+      class="whatsapp-button"
+      target="_blank"
+      title="Chatea con nosotros en WhatsApp"
+    >
+      <img
+        src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
+        alt="WhatsApp"
+      />
+    </a>
 
     <!-- Preloader -->
     <div id="preloader"></div>

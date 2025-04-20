@@ -90,6 +90,31 @@
     document.addEventListener('scroll', toggleScrollTop);
   
     /**
+     * Scroll Button Whatsapp
+     */
+    let whatsappbutton = document.querySelector('.whatsapp-button');
+  
+    function toggleScrollButton() {
+      if (whatsappbutton) {
+        window.scrollY > 100 ? whatsappbutton.classList.add('active') : whatsappbutton.classList.remove('active');
+      }
+    }
+    whatsappbutton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  
+    window.addEventListener('load', toggleScrollButton);
+    document.addEventListener('scroll', toggleScrollButton);
+
+
+
+
+
+    /**
      * Animation on scroll function and init
      */
     function aosInit() {
